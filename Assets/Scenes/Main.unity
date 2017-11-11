@@ -367,8 +367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stalactitePrefab: {fileID: 1791367037860660, guid: b31b20983a9744ccf8acfefcb3b7f253,
     type: 2}
-  generationInterval: 3
-  separation: 5
+  generationInterval: 1.5
+  separation: 4
   speed: 2
   stalactiteYPositions:
   - 2
