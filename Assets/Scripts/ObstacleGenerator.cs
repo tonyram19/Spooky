@@ -7,6 +7,7 @@ public class ObstacleGenerator : MonoBehaviour
     [SerializeField] GameObject stalactitePrefab;
     [SerializeField] float generationInterval;
     [SerializeField] float separation;
+    [SerializeField] float speed;
     [SerializeField] float[] stalactiteYPositions;
     [SerializeField] Vector2[] stalactiteScales;
 
@@ -30,8 +31,7 @@ public class ObstacleGenerator : MonoBehaviour
         }
 
         Vector2 position = GetComponent<RectTransform>().anchoredPosition;
-
-        GetComponent<RectTransform>().anchoredPosition = new Vector2(position.x - 1 * Time.deltaTime, position.y);
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(position.x - speed * Time.deltaTime, position.y);
     }
 
     public void GenerateStalactite()
